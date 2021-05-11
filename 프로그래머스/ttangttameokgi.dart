@@ -14,7 +14,7 @@ int Ttangttameokgi(List<List<int>> land) {
     land[i][3] = [land[i + 1][0], land[i + 1][1], land[i + 1][2]].reduce(max) +
         land[i][3];
   }
-  answer = land[0].reduce(max); /***포인트!!***/
+  answer = land[0].reduce(max);
 
   return answer;
 }
